@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * CALLING QUESTIONS&ANSWERS CONTROLLER
+ */
+
+use App\Http\Controllers\PlayerController;
+use App\Http\Controllers\ResultsController;
 use App\Http\Controllers\QuestnAnswController;
 use Illuminate\Support\Facades\Route;
 /*
@@ -21,4 +27,12 @@ Route::get('/nuevojugador', function(){
     return view('nuevojugador');
 });
 
+Route::post('/nuevojugador',[PlayerController::class,'create'])->name('jugando.create');
+
+Route::get('/jugando', function(){
+    return view('jugando');
+})->name('jugando');
+
 Route::resource('questn_answs', QuestnAnswController::class);
+Route::resource('ResultsController', ResultsController::class);
+Route::resource('PlayerController', PlayerController::class);
