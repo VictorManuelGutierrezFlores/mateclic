@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\QuestnAnswController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +21,4 @@ Route::get('/nuevojugador', function(){
     return view('nuevojugador');
 });
 
+Route::resource('questn_answs', QuestnAnswController::class);
