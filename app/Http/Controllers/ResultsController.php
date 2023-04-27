@@ -12,8 +12,7 @@ class ResultsController extends Controller
 
     public function postResults($player){
         $PlayerResults  = [
-            'results' => $player,
-            'score' => $score
+            'results' => $player
         ];
 
         /**
