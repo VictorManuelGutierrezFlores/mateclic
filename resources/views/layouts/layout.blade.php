@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
     @yield('content')
     <!--PIE DE PAGINA-->
     <footer class="bg-transparent text-black py-5 mt-7 text-right text-xl w-full absolute bottom-0">

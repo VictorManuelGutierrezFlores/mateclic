@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('pregunta');
             $table->string('respuesta');
+            $table->string('grado');
             $table->timestamps();
         });
     }
