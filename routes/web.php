@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Route::get('/nuevojugador', function(){
     return view('nuevojugador');
-});
+})->name('nuevojugador');
 
 Route::post('/nuevojugador',[PlayerController::class,'create'])->name('jugando.create');
 
@@ -38,5 +38,4 @@ Route::resource('ResultsController', ResultsController::class);
 Route::resource('PlayerController', PlayerController::class);
 
 Auth::routes();
-
-Route::get('/autorizacion', [App\Http\Controllers\HomeController::class, 'index'])->name('autorizacion');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('autorizado');

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    {{ $quiz->name ?? "{{ __('Show') Quiz" }}
+    {{ $quiz->name ?? "{{ __('Mostrar') Quiz" }}
 @endsection
 
 @section('content')
@@ -11,10 +11,10 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">{{ __('Show') }} Quiz</span>
+                            <span class="card-title">{{ __('Mostrar') }} Quiz</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('quizzes.index') }}"> {{ __('Back') }}</a>
+                            <a class="btn btn-primary" href="{{ route('quizzes.index') }}"> {{ __('Regresar') }}</a>
                         </div>
                     </div>
 
@@ -27,6 +27,10 @@
                         <div class="form-group">
                             <strong>Respuesta:</strong>
                             {{ $quiz->respuesta }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Grado:</strong>
+                            {{ $quiz->grado }}
                         </div>
 
                     </div>

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.layout')
 @section('content')
 
 <div class="space-y-1 pb-8 bg-fixed flex-col " style="background-image:url(/img/logo_rule-png.png);background-size: 15%; background-position:left top;background-repeat: no-repeat;">
@@ -21,7 +21,7 @@
         <div class="flex-col max-w-sm mx-auto mt-3 space-y-5 p-5 rounded-t-lg rounded-b-lg">
             <!--BOTONO REGRESAR INDEX-->
             <button type="button" class="text-white bg-[#D61C4E] hover:bg-[#D61C4E]/90 focus:ring-4 focus:outline-none focus:ring-[#D61C4E]/50 font-just text-4xl rounded-lg py-1.5 px-5 text-center inline-flex items-center dark:focus:ring-[#D61C4E]/55 ">
-                <a href="/">
+                <a href="{{ route('home') }}">
                     <span class="text-3xl">
                         Regresar
                     </span>

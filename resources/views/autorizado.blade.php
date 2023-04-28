@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('Estas dentro!') }}
+                    {{ __('Has iniciado sesion!') }}
                 </div>
             </div>
         </div>
