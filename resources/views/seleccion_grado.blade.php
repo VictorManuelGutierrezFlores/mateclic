@@ -33,7 +33,7 @@
             </div>
 
             <div class="col-start-2 row-start-5 -mt-96 w-2/6 m-auto">
-                <a href="/inicia_juego">
+                <a href="/inicia_juego_primaria">
                     <button class="boton3 tres">
                         <span>
                             Iniciar

@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/*estilos de botones*/
 body {
 	min-height: 100vh;
 }
@@ -58,6 +60,7 @@ body {
 	left: 0;
 }
 
+/*-----------------------------------------------------------------------------------------*/
 .boton2 {
 	display: inline-flex;
 	align-items: center;
@@ -100,6 +103,7 @@ body {
 	left: 0;
 }
 
+/*-----------------------------------------------------------------------------------------*/
 .boton3 {
 	display: inline-flex;
 	align-items: center;
@@ -143,7 +147,7 @@ body {
 }
 
 
-
+/*-----------------------------------------------------------------------------------------*/
 .boton4 {
 	display: inline-flex;
 	align-items: center;
@@ -186,7 +190,94 @@ body {
 	left: 0;
 }
 
-/*estilos de temporizador*/
+/*-----------------------------------------------------------------------------------------*/
+.boton5 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: 80px;
+	background: #5df185;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton5 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton5.cinco::after {
+	content: "";
+	width: 150%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 160px);
+	border-bottom: 80px solid #1ed84f;
+	border-right: 80px solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+.boton5.cinco:hover::after {
+	left: 0;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.boton6 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: 80px;
+	background: #f86b6b;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton6 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton6.seis::after {
+	content: "";
+	width: 150%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 160px);
+	border-bottom: 80px solid #ff3636;
+	border-right: 80px solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+.boton6.seis:hover::after {
+	left: 0;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*estilos de temporizador primaria*/
 
 :root {
     --lado: 200px;
@@ -230,12 +321,12 @@ body {
 }
 
 .frente {
-    background: #D61C4E;
+    background: #6264f8;
     color: #FFF;
 }
 
 .atras {
-    background: #293462;
+    background: #382afc;
     color: white;
     transform: rotateY(180deg);
 }
@@ -245,5 +336,151 @@ body {
 }
 
 .atras i{
-    color: #FEDB39;
+    color: #ffffff;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*estilos de temporizador secundaria*/
+
+:root {
+    --lado2: 200px;
+}
+
+* {
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+
+.contenedo2 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moneda2,.lado2{
+    width: var(--lado2);
+    height: var(--lado2);
+}
+
+.moneda2 {
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.lado2 {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 800%;
+
+}
+
+.frente2 {
+    background: #f86b6b;
+    color: #FFF;
+}
+
+.atras2 {
+    background: #ff3636;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.frente2 i{
+    color: #fff;
+}
+
+.atras2 i{
+    color: #ffffff;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*estilos de temporizador preparatoria*/
+
+:root {
+    --lado3: 200px;
+}
+
+* {
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+
+.contenedor3 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moneda3,.lado3{
+    width: var(--lado3);
+    height: var(--lado3);
+}
+
+.moneda3 {
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.lado3 {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 800%;
+
+}
+
+.frente3 {
+    background: #5df185;
+    color: #FFF;
+}
+
+.atras3 {
+    background: #29cf55;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.frente3 i{
+    color: #fff;
+}
+
+.atras3 i{
+    color: #ffffff;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*estilos de contenedor de ecuaciones de secundaria*/
+.cont_sec{
+    height: 500px;
+}
+
+.cont2_sec{
+    height: 430px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*estilos de contenedor de ecuaciones de preparatoria*/
+.cont_prep{
+    height: 500px;
+}
+
+.cont2_prep{
+    height: 430px;
 }

@@ -33,9 +33,17 @@ Route::get('/seleccion_grado', function(){
     return view('seleccion_grado');
 })->name('seleccion_grado');
 
-Route::get('/inicia_juego', function(){
-    return view('inicia_juego');
-})->name('inicia_juego');
+Route::get('/inicia_juego_primaria', function(){
+    return view('inicia_juego_primaria');
+})->name('inicia_juego_primaria');
+
+Route::get('/inicia_juego_secundaria', function(){
+    return view('inicia_juego_secundaria');
+})->name('inicia_juego_secundaria');
+
+Route::get('/inicia_juego_preparatoria', function(){
+    return view('inicia_juego_preparatoria');
+})->name('inicia_juego_preparatoria');
 
 Route::resource('quizzes', QuizController::class);
 Route::resource('ResultsController', ResultsController::class);
