@@ -23,15 +23,24 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
+
+Route::get('/seleccion_nombre', function(){
+    return view('seleccion_nombre');
+});
+
 Route::get('/nuevojugador', function(){
     return view('nuevojugador');
 })->name('nuevojugador');
 
 Route::post('/nuevojugador',[PlayerController::class,'create'])->name('jugando.create');
 
-Route::get('/jugando', function(){
-    return view('jugando');
-})->name('jugando');
+Route::get('/seleccion_grado', function(){
+    return view('seleccion_grado');
+})->name('seleccion_grado');
+
+Route::get('/inicia_juego', function(){
+    return view('inicia_juego');
+})->name('inicia_juego');
 
 Route::resource('quizzes', QuizController::class);
 Route::resource('ResultsController', ResultsController::class);
