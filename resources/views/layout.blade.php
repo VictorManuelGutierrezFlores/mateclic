@@ -8,12 +8,12 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body class="m-0 p-0 max-h-screen">
     @yield('content')
     <!--PIE DE PAGINA-->
-    <footer class="bg-transparent text-black py-5 mt-7 text-right text-xl w-full absolute bottom-0">
-        <div class="font-just text-4xl pr-3">Benémerita Universidad Autónoma de Puebla</div>
-        <div class="font-just text-3xl pr-3">Facultad de Ciencias de la Computación</div>
+    <footer class="bg-transparent text-black py-5 font-semibold mt-7 text-right text-xl w-full absolute bottom-0 grid grid-rows-2">
+        <div class="row-star-1  text-2xl pr-3">Benémerita Universidad Autónoma de Puebla</div>
+        <div class="row-star-2  text-xl pr-3">Facultad de Ciencias de la Computación</div>
     </footer>
 </body>
 </html>

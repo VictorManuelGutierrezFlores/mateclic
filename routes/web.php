@@ -23,15 +23,15 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('/nuevojugador', function(){
-    return view('nuevojugador');
+Route::get('/seleccion_nombre', function(){
+    return view('seleccion_nombre');
 });
 
 Route::post('/nuevojugador',[PlayerController::class,'create'])->name('jugando.create');
 
-Route::get('/jugando', function(){
-    return view('jugando');
-})->name('jugando');
+Route::get('/seleccion_grado', function(){
+    return view('seleccion_grado');
+})->name('seleccion_grado');
 
 Route::resource('quizzes', QuizController::class);
 Route::resource('ResultsController', ResultsController::class);
@@ -40,3 +40,7 @@ Route::resource('PlayerController', PlayerController::class);
 Auth::routes();
 
 Route::get('/autorizacion', [App\Http\Controllers\HomeController::class, 'index'])->name('autorizacion');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

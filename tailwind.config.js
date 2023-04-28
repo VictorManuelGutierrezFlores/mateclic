@@ -6,6 +6,9 @@ module.exports = {
     "./resources/**/*.vue"
   ],
   theme: {
+    fontFamily:{
+        'josefina':['Josefin Sans']
+    },
     extend: {},
   },
   plugins: [],
