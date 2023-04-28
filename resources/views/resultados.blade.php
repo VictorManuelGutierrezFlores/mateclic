@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.layout')
 @section('content')
 
 <div style="background-image:url(/img/confetti.gif); " class="bg-cover h-screen">

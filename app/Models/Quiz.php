@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property $id
  * @property $pregunta
  * @property $respuesta
+ * @property $grado
  * @property $created_at
  * @property $updated_at
  *
@@ -22,6 +23,7 @@ class Quiz extends Model
     static $rules = [
 		'pregunta' => 'required',
 		'respuesta' => 'required',
+		'grado' => 'required',
     ];
 
     protected $perPage = 20;
@@ -31,7 +33,7 @@ class Quiz extends Model
      *
      * @var array
      */
-    protected $fillable = ['pregunta','respuesta'];
+    protected $fillable = ['pregunta','respuesta','grado'];
 
 
 
