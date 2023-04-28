@@ -33,6 +33,10 @@ Route::get('/seleccion_grado', function(){
     return view('seleccion_grado');
 })->name('seleccion_grado');
 
+Route::get('/inicia_juego', function(){
+    return view('inicia_juego');
+})->name('inicia_juego');
+
 Route::resource('quizzes', QuizController::class);
 Route::resource('ResultsController', ResultsController::class);
 Route::resource('PlayerController', PlayerController::class);

@@ -141,3 +141,109 @@ body {
 .boton3.tres:hover::after {
 	left: 0;
 }
+
+
+
+.boton4 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	height: 80px;
+	background: #a284ff;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton4 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton4.cuatro::after {
+	content: "";
+	width: 150%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 160px);
+	border-bottom: 80px solid #6635ff;
+	border-right: 80px solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+.boton4.cuatro:hover::after {
+	left: 0;
+}
+
+/*estilos de temporizador*/
+
+:root {
+    --lado: 200px;
+}
+
+* {
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+
+.contenedor {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moneda,.lado{
+    width: var(--lado);
+    height: var(--lado);
+}
+
+.moneda {
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.lado {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 800%;
+
+}
+
+.frente {
+    background: #D61C4E;
+    color: #FFF;
+}
+
+.atras {
+    background: #293462;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.frente i{
+    color: #fff;
+}
+
+.atras i{
+    color: #FEDB39;
+}
