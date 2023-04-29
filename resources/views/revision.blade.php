@@ -15,7 +15,7 @@
 
                 <div class="col-start-2 row-start-5 my-auto pt-2">
                     <div class="w-24 h-16 bg-[#85d1ee] pt-4 text-center rounded-lg text-2xl font-bold">
-                        25/25
+                        7/9
                     </div>
                 </div>
             </div>
