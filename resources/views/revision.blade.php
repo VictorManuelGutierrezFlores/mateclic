@@ -21,8 +21,8 @@
             </div>
         </div>
 
-        <div class="col-start-2 row-start-2 row-span-4 container fondo_t overflow-auto">
-            <div class="grid grid-cols-1">
+        <div class="col-start-2 row-start-2 row-span-4 container fondo_t table-wrapper">
+            <div class="grid grid-cols-1 table-wrapper">
             <table class="mx-auto text-center text-md">
                 <thead>
                     <tr>
