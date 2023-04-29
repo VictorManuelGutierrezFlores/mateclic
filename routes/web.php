@@ -50,6 +50,14 @@ Route::get('/inicia_juego_preparatoria', function(){
     return view('inicia_juego_preparatoria');
 })->name('inicia_juego_preparatoria');
 
+Route::get('/resultados', function(){
+    return view('resultados');
+})->name('resultados');
+
+Route::get('/revision', function(){
+    return view('revision');
+})->name('revision');
+
 Route::resource('quizzes', QuizController::class);
 Route::resource('ResultsController', ResultsController::class);
 Route::resource('PlayerController', PlayerController::class);

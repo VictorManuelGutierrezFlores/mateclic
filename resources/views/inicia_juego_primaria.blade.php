@@ -137,11 +137,13 @@
                     </div>
 
                     <div class="col-start-3 col-span-2 row-start-4 w-60 -mt-2 m-auto">
-                        <button class="boton4 cuatro">
-                            <span>
-                                Siguiente
-                            </span>
-                        </button>
+                        <a href="/resultados">
+                            <button class="boton4 cuatro">
+                                <span>
+                                    Siguiente
+                                </span>
+                            </button>
+                        </a>
                     </div>
                 </div>
 

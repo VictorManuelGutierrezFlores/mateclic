@@ -130,7 +130,7 @@
                     <div class="col-start-1 col-span-4 row-start-3">
                         <div class="grid grid-cols-8 ">
                             <div class="col-start-2 w-3/6">
-                                <div class=" text-2xl mx-auto  font-semibold text-right">
+                                <div class=" text-2xl mx-auto font-semibold text-right">
                                     X =
                                 </div>
                             </div>
